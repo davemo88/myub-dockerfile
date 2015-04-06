@@ -21,6 +21,7 @@ libapache2-mod-php5
 
 ## python packages
 RUN pip install sqlalchemy
+RUN pip install scikit-learn
 
 ## active ssh
 RUN rm -f /etc/service/sshd/down
