@@ -12,12 +12,14 @@ python-matplotlib \
 python-pandas \
 python-sympy \
 python-nose \
+python-mysqldb \
 mysql-server \
 mysql-client \
 apache2 \
 php5 \
 php5-mysql \
-libapache2-mod-php5
+libapache2-mod-php5 \
+libapache2-mod-wsgi
 
 ## python packages
 RUN pip install sqlalchemy
