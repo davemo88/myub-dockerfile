@@ -22,6 +22,10 @@ libapache2-mod-php5
 ## python packages
 RUN pip install sqlalchemy
 RUN pip install scikit-learn
+RUN pip install paramiko
+RUN pip install flask
+RUN pip install flask-login
+RUN pip install flask-mail
 
 ## active ssh
 RUN rm -f /etc/service/sshd/down
