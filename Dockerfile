@@ -30,8 +30,8 @@ RUN pip install flask-mail
 ## active ssh
 RUN rm -f /etc/service/sshd/down
 
-## http, https, and ssh
-EXPOSE 80 443 22
+## http, https, ssh, flask dev server
+EXPOSE 80 443 22 5000
 
 ##enable ssl module for apache
 RUN a2enmod ssl
