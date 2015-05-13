@@ -28,7 +28,6 @@ RUN pip install paramiko
 RUN pip install flask
 RUN pip install flask-login
 RUN pip install flask-mail
-RUN pip install flask-restful
 
 ## active ssh
 RUN rm -f /etc/service/sshd/down
