@@ -6,12 +6,6 @@ apt-get -yq install \
 python-dev \
 python-pip \
 ipython \
-python-numpy \
-python-scipy \
-python-matplotlib \
-python-pandas \
-python-sympy \
-python-nose \
 python-mysqldb \
 mysql-server \
 mysql-client \
@@ -23,11 +17,14 @@ libapache2-mod-wsgi
 
 ## python packages
 RUN pip install sqlalchemy
+RUN pip install numpy
+RUN pip install scipy
 RUN pip install scikit-learn
 RUN pip install paramiko
 RUN pip install flask
 RUN pip install flask-login
 RUN pip install flask-mail
+RUN pip install nose
 
 ## active ssh
 RUN rm -f /etc/service/sshd/down
