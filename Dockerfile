@@ -13,19 +13,9 @@ apache2 \
 php5 \
 php5-mysql \
 libapache2-mod-php5 \
-libapache2-mod-wsgi
+libapache2-mod-wsgi \
+rabbitmq-server
 
-## python packages
-RUN pip install sqlalchemy
-RUN pip install numpy
-RUN pip install scipy
-RUN pip install scikit-learn
-RUN pip install paramiko
-RUN pip install flask
-RUN pip install flask-login
-RUN pip install flask-mail
-RUN pip install nose
-RUN pip install pandas
 
 ## active ssh
 RUN rm -f /etc/service/sshd/down
